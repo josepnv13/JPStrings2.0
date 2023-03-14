@@ -5,7 +5,7 @@ import java.util.Random;
 public class JPStrings {
     /**
      * Pone la primera letra en mayuscula y el resto en minuscula
-     * @param text
+     * @param text el texto
      * @return
      */
     public static String capitalitzar(String text){
@@ -27,7 +27,9 @@ public class JPStrings {
             resultat += "\033[3" + (random.nextInt(8)) + "m" + text.charAt(i);
         }
         return resultat +"\033[0m";
-    }/**
+    }
+
+    /**
      * Pone espacios a la izquierda de las palabras...
      *
      * @param text
@@ -39,5 +41,42 @@ public class JPStrings {
         // si vull tindre 6 espais
 
         return " ".repeat(width-str.length()) + str;
+    }
+
+    /**
+     * Conviwerte un numero de dias en un texto indicando
+     * cuan
+     * @param days
+     * @return
+     */
+    public static String toWeekdays(int days) {
+
+        if (days == 7) {
+            return "1 setmana";
+        } else if (days % 7 == 0) {
+            int resultat = days / 7;
+            return resultat + " semanes";
+        } else if (days < 14 && days > 7) {
+            int resultat1 = days / 7;
+            int resultat = days % 7;
+            return resultat1 + " setmanes " + resultat + " dies";
+        } else {
+            int resultat1 = days / 7;
+            int resultat = days % 7;
+            return resultat1 + " setmanes " + resultat + " dies";
+        }
+
+    }
+
+    /**
+     * Une un texto con un nuymero
+     * @param text El texto
+     * @param num El numero
+     * @param orden Si es true texto+numero si el false al reves
+     * @return el texto unido en el orden indicado
+     */
+    public static String uneTextoYNumero(String text, int num, boolean orden) {
+        if (orden) return text + num;
+        return num + text;
     }
 }
