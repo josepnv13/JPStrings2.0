@@ -60,6 +60,10 @@ public class JPStrings {
             int resultat1 = days / 7;
             int resultat = days % 7;
             return resultat1 + " setmanes " + resultat + " dies";
+        }else if (days<7){
+
+            return days +" dies";
+
         } else {
             int resultat1 = days / 7;
             int resultat = days % 7;
@@ -78,5 +82,24 @@ public class JPStrings {
     public static String uneTextoYNumero(String text, int num, boolean orden) {
         if (orden) return text + num;
         return num + text;
+    }
+
+    /**
+     * Afegix un @ davant i darrere
+     * @param text El text
+     * @param num El num
+     * @param siOno Si el numero es major de 7 I A MES HA DE SER TRUE tmb , Afegix un @ davant i darrere
+     * @return el text afegint el @ o no
+     *
+     */
+
+    public static String afegixArroba(String text , int num , boolean siOno){
+
+        if (num>7 && siOno==true){
+            return "@"+ text + "@";
+        }else {
+            return text;
+        }
+
     }
 }

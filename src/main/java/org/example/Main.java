@@ -5,7 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.println( JPStrings.uneTextoYNumero("klsdjf", 324, false));
+        System.out.println( JPStrings.afegixArroba("mbappe",8,true));
+
+
 
     }
 }

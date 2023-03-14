@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -174,19 +174,28 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#afegixArroba(java.lang.String,int,boolean)">afegixArroba</a></span>&#8203;(java.lang.String&nbsp;text,
+            int&nbsp;num,
+            boolean&nbsp;siOno)</code></th>
+<td class="colLast">
+<div class="block">Afegix un @ davant i darrere</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#capitalitzar(java.lang.String)">capitalitzar</a></span>&#8203;(java.lang.String&nbsp;text)</code></th>
 <td class="colLast">
 <div class="block">Pone la primera letra en mayuscula y el resto en minuscula</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#colorear(java.lang.String)">colorear</a></span>&#8203;(java.lang.String&nbsp;text)</code></th>
 <td class="colLast">
 <div class="block">pinta cada letra de un color...</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#leftPad(java.lang.String,int)">leftPad</a></span>&#8203;(java.lang.String&nbsp;str,
        int&nbsp;width)</code></th>
@@ -194,7 +203,7 @@ extends java.lang.Object</pre>
 <div class="block">Pone espacios a la izquierda de las palabras...</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toWeekdays(int)">toWeekdays</a></span>&#8203;(int&nbsp;days)</code></th>
 <td class="colLast">
@@ -202,7 +211,7 @@ extends java.lang.Object</pre>
  cuan</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uneTextoYNumero(java.lang.String,int,boolean)">uneTextoYNumero</a></span>&#8203;(java.lang.String&nbsp;text,
                int&nbsp;num,
@@ -319,7 +328,7 @@ extends java.lang.Object</pre>
 <a id="uneTextoYNumero(java.lang.String,int,boolean)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>uneTextoYNumero</h4>
 <pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;uneTextoYNumero&#8203;(java.lang.String&nbsp;text,
@@ -333,6 +342,26 @@ extends java.lang.Object</pre>
 <dd><code>orden</code> - Si es true texto+numero si el false al reves</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>el texto unido en el orden indicado</dd>
+</dl>
+</li>
+</ul>
+<a id="afegixArroba(java.lang.String,int,boolean)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>afegixArroba</h4>
+<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;afegixArroba&#8203;(java.lang.String&nbsp;text,
+                                            int&nbsp;num,
+                                            boolean&nbsp;siOno)</pre>
+<div class="block">Afegix un @ davant i darrere</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>text</code> - El text</dd>
+<dd><code>num</code> - El num</dd>
+<dd><code>siOno</code> - Si el numero es major de 7 I A MES HA DE SER TRUE tmb , Afegix un @ davant i darrere</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>el text afegint el @ o no</dd>
 </dl>
 </li>
 </ul>
